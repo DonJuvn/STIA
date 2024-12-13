@@ -57,7 +57,6 @@ body {
    opacity: 0;
    pointer-events: none;
    width: 100vw;
-   flex-direction: end;
 }
 .nav.open {
    transform: translateY(0);
@@ -115,30 +114,73 @@ nav .container {
    justify-content: space-between;
    margin: 4% auto 3.25%;
 }
+.nav .contacts,
+p {
+   display: none;
+}
 @media screen and (max-width: 768px) {
-  .menu{
-    padding: 7% 0;
-  }
-  .nav .logo{
-    padding: 10% 0;
-  }
-  .menu .logo img{
-    width: 60px;
-  }
-  .menu .menu-toggle{
-    gap: 7px;
-    font-size: 16px;
-    right: 2%;
-    top: 24%;
-  }
-  .menu .menu-toggle img{
-    width: 14px;
-  }
- .nav .navigation{
-  width: 90%;
-  margin: 10% auto 8.25%;
- }
- .nav .navigation a{
-  font-size: 16px;
- }
+   .menu {
+      padding: 7% 0;
+   }
+   .menu .nav {
+      height: 100vh;
+   }
+   .nav .logo {
+      position: absolute;
+      top: 2%;
+      margin-right: auto;
+      width: fit-content;
+      border: none;
+   }
+   .menu .logo img {
+      width: 60px;
+   }
+   .menu .menu-toggle {
+      gap: 7px;
+      font-size: 16px;
+      right: 2%;
+      top: 24%;
+   }
+   .menu .nav .menu-toggle {
+      position: absolute;
+      margin-left: auto;
+      top: 4%;
+      margin-right: 3%;
+   }
+   .menu .menu-toggle img {
+      width: 14px;
+   }
+   .nav.open {
+      justify-content: flex-start;
+      border-radius: 0;
+   }
+   .nav .navigation {
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      justify-content: space-between;
+      margin: 30% 0 0;
+   }
+   .nav .navigation a {
+      font-size: 18px;
+   }
+   .nav .contacts {
+      display: flex;
+      position: absolute;
+      bottom: 15%;
+      flex-direction: column;
+   }
+   .nav .contacts a {
+      text-decoration: none;
+      color: #fffcff;
+      font-size: 18px;
+      line-height: 30px;
+   }
+   .nav p {
+      position: absolute;
+      bottom: 5%;
+      color: #fffcff;
+      font-size: 16px;
+      display: flex;
+   }
 }

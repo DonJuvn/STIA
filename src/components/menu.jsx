@@ -1,4 +1,5 @@
-import React, { useState } from "react";const Menu = () => {
+import React, { useState } from "react";
+const Menu = () => {
    const [isOpen, setIsOpen] = useState(false); // Track if the menu is open or closed
 
    const toggleMenu = () => {
@@ -34,6 +35,12 @@ import React, { useState } from "react";const Menu = () => {
                         <a href="/projects">Проекты</a>
                         <a href="/services">Услуги</a>
                      </div>
+                     <div className="contacts">
+                        <a>Телефон:</a>
+                        <a href="#">+7 (7172) 24 55 22</a>
+                        <a href="#">+7 (7172) 24 16 27</a>
+                     </div>
+                     <p>© 2024. Все права защищены.</p>
                   </div>
                </div>
             </div>
