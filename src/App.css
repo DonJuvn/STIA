@@ -90,7 +90,7 @@ nav .container {
    top: 0;
    margin: auto;
    display: flex;
-   padding: 40px 0;
+   padding: 3% 0;
    border-bottom: 1px solid #a0a0a04d;
    width: 100%;
    text-align: center;
@@ -101,8 +101,8 @@ nav .container {
    margin: auto;
 }
 .nav .menu-toggle {
-   right: 75px;
-   top: 50px;
+   right: 5%;
+   top: 22%;
    width: fit-content;
    display: flex;
    margin-left: auto;
@@ -113,5 +113,32 @@ nav .container {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   margin: 50px auto 40px;
+   margin: 4% auto 3.25%;
+}
+@media screen and (max-width: 768px) {
+  .menu{
+    padding: 7% 0;
+  }
+  .nav .logo{
+    padding: 10% 0;
+  }
+  .menu .logo img{
+    width: 60px;
+  }
+  .menu .menu-toggle{
+    gap: 7px;
+    font-size: 16px;
+    right: 2%;
+    top: 24%;
+  }
+  .menu .menu-toggle img{
+    width: 14px;
+  }
+ .nav .navigation{
+  width: 90%;
+  margin: 10% auto 8.25%;
+ }
+ .nav .navigation a{
+  font-size: 16px;
+ }
 }
