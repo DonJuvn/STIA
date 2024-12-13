@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1566px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* menu */
+#menu {
+  padding-top: 2%;
   display: flex;
-  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+}
+#menu .menu {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 2% 0; */
 }
 
-.App-link {
-  color: #61dafb;
+.menu .nav {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#menu .menu a {
+  font-weight: 400;
+  align-items: center;
+  text-decoration: none;
+  color: #494947;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.menu #phone {
+  color: #00458a;
+}
+
+/* Hamburger menu (toggle button) */
+#menu .menu .hamburger {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#menu .menu .hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #00458a;
+  border-radius: 5px;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  #menu .menu {
+     flex-direction: row;
+     padding-top: 5%;
+     flex-wrap: wrap;
+     align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu .nav {
+     width: 100%;
+     flex-direction: column;
+     /* gap: 10px; */
+     margin-top: 20px;
+     display: none; /* Hide the menu by default on small screens */
+  }
+
+  .menu .nav.open {
+     display: flex;
+  }
+
+  #menu .menu .hamburger {
+     display: flex;
+  }
+
+  .menu .nav a {
+     font-size: 14px;
+     padding: 8px 0;
+  }
+
+  .logo img {
+     width: 180px;
+  }
+
+  /* Optional: Hide phone number on mobile */
+  .menu #phone {
+     display: none;
   }
 }
+
+/* Further mobile adjustments */
+/* @media (max-width: 480px) {
+  .menu .nav a {
+     font-size: 12px;
+  }
+
+  .logo img {
+     width: 100px;
+  }
+} */
