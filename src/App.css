@@ -238,8 +238,10 @@ nav .container {
    border-radius: 30px 30px 0 0;
    z-index: 1005;
    position: absolute;
+   border-bottom: 1px solid #a0a0a030;
+   width: 100vw;
 }
-.about p {
+#title {
    font-size: 36px;
    font-weight: 400;
    line-height: 44px;
@@ -248,12 +250,125 @@ nav .container {
 }
 @media screen and (max-width: 768px) {
    #about {
-      padding: 3% 0;
+      padding: 3% 0 10%;
       margin-top: 85vh;
    }
-   .about p {
+   #title {
       font-size: 22px;
       line-height: 30px;
       width: 100%;
+   }
+}
+
+/* services */
+#services {
+   margin-top: 150vh;
+   padding-top: 5%;
+   background-color: #fffcff;
+   width: 100vw;
+}
+@media screen and (min-width: 1566px) {
+   #services {
+      margin-top: 125vh;
+   }
+}
+.services {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.services .item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 49.4%;
+   position: relative;
+   overflow: hidden;
+   background-color: #f2f2f7;
+   align-items: center;
+   height: 300px;
+   border-radius: 30px;
+   transition: 0.3s;
+   margin-bottom: 1%;
+}
+.services .item p {
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24.59px;
+   color: #a0a0a0;
+}
+.services .item:hover {
+   background-color: #494947;
+}
+.services .item:hover #title {
+   color: #fffcff;
+}
+.services .item:hover p {
+   color: #fffcff;
+}
+.services .item:hover img {
+   display: flex;
+}
+.services .item img {
+   position: absolute;
+   display: none;
+   height: 100%;
+   top: 0;
+   right: 0;
+   transition: 0.3s;
+   opacity: 0.1;
+}
+@media screen and (max-width: 768px) {
+   #services {
+      margin-top: 148vh;
+      padding-top: 5%;
+      background-color: #fffcff;
+      width: 100vw;
+   }
+   .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .services .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 49.4%;
+      position: relative;
+      overflow: hidden;
+      background-color: #f2f2f7;
+      align-items: center;
+      height: 300px;
+      border-radius: 30px;
+      transition: 0.3s;
+      margin-bottom: 1%;
+   }
+   .services .item p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24.59px;
+      color: #a0a0a0;
+   }
+   .services .item:hover {
+      background-color: #494947;
+   }
+   .services .item:hover #title {
+      color: #fffcff;
+   }
+   .services .item:hover p {
+      color: #fffcff;
+   }
+   .services .item:hover img {
+      display: flex;
+   }
+   .services .item img {
+      position: absolute;
+      display: none;
+      height: 100%;
+      top: 0;
+      right: 0;
+      transition: 0.3s;
+      opacity: 0.1;
    }
 }
