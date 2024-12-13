@@ -11,23 +11,30 @@ import React, { useState } from "react";const Menu = () => {
             <div className="menu">
                <div className="logo">
                   <a href="/">
-                     <img src="img/logo.png" alt="" />
+                     <img src="img/logo.svg" alt="Logo" />
                   </a>
                </div>
 
-               <div className="hamburger" onClick={toggleMenu}>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-               </div>
-               <div className={`nav ${isOpen ? "open" : ""}`}>
-                  <a href="/about">О нас</a>
-                  <a href="/guide">Руководство</a>
-                  <a href="/activity">Деятельность</a>
-                  <a id="phone" href="#">
-                     <img src="img/phone.png" alt="" />
-                     +7 (7171) 156 22 88
-                  </a>
+               <button className="menu-toggle" onClick={toggleMenu}>
+                  Меню <img src="img/link.svg" alt="Menu icon" />
+               </button>
+
+               <div className={`nav ${isOpen ? "open" : "closed"}`}>
+                  <div className="container">
+                     <div className="logo" onClick={toggleMenu}>
+                        <img src="img/logo.svg" alt="" />
+                     </div>
+                     <button className="menu-toggle" onClick={toggleMenu}>
+                        Закрыть
+                        <img src="img/link.svg" alt="" />
+                     </button>
+                     <div className="navigation">
+                        <a href="/">Главная</a>
+                        <a href="/about">О компании</a>
+                        <a href="/projects">Проекты</a>
+                        <a href="/services">Услуги</a>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>

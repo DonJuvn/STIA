@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Menu from "./components/menu";
 
 function App() {
-  return (
-    <>
-    Hwlo
-    </>
-  );
+   return (
+      <>
+         <Menu />
+      </>
+   );
 }
 
 export default App;
