@@ -602,3 +602,8 @@ nav .container {
       transform: translateX(-100%); /* Move to the left and reset */
    }
 }
+@media screen and (max-width: 768px) {
+   #logos{
+      margin-top: 140vh;
+   }
+}
