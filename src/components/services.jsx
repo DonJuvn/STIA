@@ -1,4 +1,6 @@
-import React from "react";const servicesData = [
+import React, { useState, useEffect, useRef } from "react";
+
+const servicesData = [
    {
       id: 1,
       title: "Разработка документов по стандартизации",
@@ -49,13 +51,39 @@ import React from "react";const servicesData = [
    },
 ];
 
+
 const Services = () => {
+   const [currentIndex, setCurrentIndex] = useState(0);
+   const servicesContainerRef = useRef(null);
+
+   const handleScroll = () => {
+      if (servicesContainerRef.current) {
+         const container = servicesContainerRef.current;
+         const scrollPosition = container.scrollLeft;
+         const itemWidth = container.scrollWidth / servicesData.length;
+         const index = Math.round(scrollPosition / itemWidth);
+         setCurrentIndex(index);
+      }
+   };
+
+   useEffect(() => {
+      const container = servicesContainerRef.current;
+      container?.addEventListener("scroll", handleScroll);
+
+      return () => {
+         container?.removeEventListener("scroll", handleScroll);
+      };
+   }, []);
+
    return (
       <div id="services">
          <div className="container">
             <h1 id="title">Услуги</h1>
-            <div className="services">
-               {servicesData.map((service) => (
+            <div
+               className="services"
+               ref={servicesContainerRef}
+            >
+               {servicesData.map((service, index) => (
                   <div className="item" key={service.id}>
                      <div className="container">
                         <h1 id="title">{service.title}</h1>
@@ -63,6 +91,16 @@ const Services = () => {
                      </div>
                      <img src="img/item-bg.svg" alt="" />
                   </div>
+               ))}
+            </div>
+            <div className="pagination">
+               {servicesData.map((_, index) => (
+                  <span
+                     key={index}
+                     className={`pagination-dot ${
+                        index === currentIndex ? "active" : ""
+                     }`}
+                  ></span>
                ))}
             </div>
          </div>
