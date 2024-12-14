@@ -1,26 +1,30 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Menu from "./components/menu";
 import Video from "./components/video";
-import About from "./components/about";
-import Services from "./components/services";
-import Features from "./components/features";
-import Results from "./components/results";
-import Logos from "./components/logos";
 import Footer from "./components/footer";
+import AboutPage from "./pages/About";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import ServicesPage from "./pages/Services";
+
+import "./App.css";
 
 function App() {
    return (
-      <>
-         <Menu />
-         <Video />
-         <About />
-         <Services />
-         <Features />
-         <Results />
-         <Logos />
-         <Footer />
-      </>
+      <Router>
+         <div className="App">
+            <Menu />
+            <Video />
+            <Routes>
+               <Route path="/" element={<Home />} />
+               <Route path="/about" element={<AboutPage />} />
+               <Route path="/projects" element={<Projects />} />
+               <Route path="/services" element={<ServicesPage />} />
+            </Routes>
+            <Footer />
+         </div>
+      </Router>
    );
 }
 
