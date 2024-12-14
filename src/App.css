@@ -1050,3 +1050,43 @@ nav .container {
    color: #494947;
    font-weight: 400;
 }
+@media screen and (min-width: 1566px) {
+   #border{
+      margin-top: 85vh;
+   }
+   #projects{
+      margin-top: 70vh;
+      padding-top: 15%;
+   }
+}
+@media screen and (max-width: 768px) {
+   #border {
+      margin-top: 85vh;
+      height: 5%;
+   }
+   #projects {
+      padding-top: 5%;
+      margin-top: 90vh;
+   }
+   .projects {
+      flex-direction: column;
+      margin-top: 10%;
+   }
+   .projects .item {
+      padding: 1% 0;
+      height: 250px;
+      width: 100%;
+      margin-bottom: 3%;
+   }
+   .projects #long{
+      width: 100%;
+   }
+   .projects .item h1 {
+      font-size: 80px;
+      line-height: 109.8px;
+   }
+   .projects .item p {
+      font-size: 14px;
+      line-height: 19.12px;
+   }
+}
