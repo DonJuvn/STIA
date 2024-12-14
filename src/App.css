@@ -564,3 +564,41 @@ nav .container {
       margin: 0 0 2%;
    }
 }
+
+/* Logos */
+#logos {
+   padding-top: 5%;
+   position: relative; /* Ensure the container remains fixed */
+   width: 100%; /* Ensure it takes up full width */
+   overflow: hidden; /* Hide any overflowed content */
+}
+.logos {
+   margin-top: 3%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-bottom: 15px;
+   gap: 10%;
+   animation: scrollLogos 20s linear infinite; /* Infinite scroll animation */
+}
+.logos .item {
+   background-color: transparent;
+   width: 200px;
+   height: 130px;
+   flex-shrink: 0;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   display: flex;
+   transition: transform 0.3s ease; /* Ensure smooth transform */
+}
+
+/* Animation for infinite scrolling */
+@keyframes scrollLogos {
+   0% {
+      transform: translateX(0); /* Start from the left */
+   }
+   100% {
+      transform: translateX(-100%); /* Move to the left and reset */
+   }
+}
