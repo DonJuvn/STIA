@@ -847,10 +847,6 @@ nav .container {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-}
-.goals2 {
-   display: flex;
-   flex-direction: row;
    justify-content: space-between;
 }
 .goals2 .item {
@@ -881,4 +877,35 @@ nav .container {
    height: 100%;
    object-fit: cover;
    border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+   #goals2 {
+      padding-top: 10%;
+   }
+   .goals2 {
+      margin-top: 8%;
+      flex-wrap: nowrap;
+      gap: 5%;
+      overflow-x: auto;
+      scrollbar-width: none;
+   }
+   .goals2 .item {
+      width: 90%;
+      height: 170px;
+      flex-shrink: 0;
+      align-items: start;
+      padding-top: 10%;
+      margin-bottom: 1%;
+   }
+   .goals2 .item h1 {
+      overflow-wrap: break-word;
+   }
+   .goals2 .item p {
+      font-size: 14px;
+      line-height: 19.12px;
+   }
+   .goals2 .img {
+      display: none;
+   }
 }
