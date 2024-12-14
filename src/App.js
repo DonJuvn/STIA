@@ -5,7 +5,7 @@ import Video from "./components/video";
 import Footer from "./components/footer";
 import AboutPage from "./pages/About";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import ProjectsPage from "./pages/Projects";
 import ServicesPage from "./pages/Services";
 
 import "./App.css";
@@ -19,7 +19,7 @@ function App() {
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/about" element={<AboutPage />} />
-               <Route path="/projects" element={<Projects />} />
+               <Route path="/projects" element={<ProjectsPage />} />
                <Route path="/services" element={<ServicesPage />} />
             </Routes>
             <Footer />

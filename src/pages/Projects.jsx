@@ -1,13 +1,13 @@
 import React from "react";
+import Projects from "../components/projects";
 
-
-const Projects = () => {
+const ProjectsPage = () => {
    return (
       <>
-         <h1>projects</h1>
-         
+         <div id="border"></div>
+         <Projects />
       </>
    );
 };
 
-export default Projects;
+export default ProjectsPage;
