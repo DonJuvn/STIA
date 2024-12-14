@@ -740,3 +740,37 @@ nav .container {
    padding: 3% 0;
    width: 100vw;
 }
+
+@media screen and (max-width: 768px) {
+   .title {
+      padding-bottom: 2.5%;
+   }
+   .title .dot {
+      width: 6px;
+      height: 6px;
+      margin-right: 3%;
+   }
+   #history {
+      padding: 10% 0;
+   }
+   .history {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 2%;
+      padding: 2% 0;
+   }
+   .history p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 21.86px;
+      text-indent: 0;
+      border-right: none;
+      padding-right: 5%;
+   }
+   .history #number {
+      display: none;
+   }
+   #sight{
+      margin-top: 140vh;
+   }
+}
