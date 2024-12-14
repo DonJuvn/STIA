@@ -1,5 +1,4 @@
-import React from "react";
-const Footer = () => {
+import React from "react";const Footer = () => {
    return (
       <div id="footer">
          <div className="container">
