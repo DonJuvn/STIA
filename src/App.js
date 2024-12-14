@@ -7,6 +7,7 @@ import Services from "./components/services";
 import Features from "./components/features";
 import Results from "./components/results";
 import Logos from "./components/logos";
+import Footer from "./components/footer";
 
 function App() {
    return (
@@ -18,6 +19,7 @@ function App() {
          <Features />
          <Results />
          <Logos />
+         <Footer />
       </>
    );
 }
