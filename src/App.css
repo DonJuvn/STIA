@@ -726,12 +726,17 @@ nav .container {
 /* sight */
 #sight {
    padding: 5% 0;
-   border-bottom: 1px solid #a0a0a030;
    width: 100vw;
    margin-top: 165vh;
 }
 @media screen and (min-width: 1566px) {
-   #sight{
+   #sight {
       margin-top: 140vh;
    }
+}
+
+/* mission */
+#mission {
+   padding: 3% 0;
+   width: 100vw;
 }
