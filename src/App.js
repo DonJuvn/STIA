@@ -5,6 +5,7 @@ import Video from "./components/video";
 import About from "./components/about";
 import Services from "./components/services";
 import Features from "./components/features";
+import Results from "./components/results";
 
 function App() {
    return (
@@ -14,6 +15,7 @@ function App() {
          <About />
          <Services />
          <Features />
+         <Results />
       </>
    );
 }

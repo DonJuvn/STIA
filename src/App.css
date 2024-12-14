@@ -5,8 +5,9 @@ body {
    font-family: "Manrope", sans-serif;
    max-width: 100vw;
    overflow-x: hidden;
-   background-color: #494947;
-   background: linear-gradient(to bottom, #494947 30%, #fff 30%);
+   /* background-color: #494947; */
+   background-color: #fff;
+   /* background: linear-gradient(to bottom, #494947 30%, #fff 30%); */
 }
 .container {
    width: 90%;
@@ -443,5 +444,123 @@ nav .container {
       right: -25%;
       width: 100%;
       opacity: 0.5;
+   }
+}
+
+/* results */
+#results {
+   background-color: #fff;
+   padding: 5% 0;
+}
+#results #title {
+   width: 50%;
+   border-right: 1px solid #49494715;
+}
+#results .container {
+   border-top: 1px solid #49494730;
+   padding-top: 3%;
+}
+.results {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.results .left {
+   width: 50%;
+}
+.results .right {
+   width: 50%;
+}
+.results #initial {
+   margin-top: 15%;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 27.32px;
+   color: #494947;
+   border-bottom: 1px solid #49494730;
+   padding-bottom: 10%;
+}
+#results .item {
+   background-color: #fffcff;
+   padding: 16% 10% 4%;
+   text-align: left;
+   border-bottom: 1px solid #49494730;
+}
+#results #left {
+   border-right: 1px solid #49494715;
+   padding-left: 0;
+}
+#results #right {
+   border-left: 1px solid #49494715;
+}
+.result-value {
+   font-size: 180px;
+   font-weight: 400;
+   color: #494947;
+   margin: 0 0 10px;
+}
+.result-description {
+   font-size: 20px;
+   color: #494947;
+   margin: 0 0 2%;
+}
+
+@media (max-width: 768px) {
+   #results {
+      padding: 10% 0;
+   }
+   #results #title {
+      width: 50%;
+      border-right: none;
+   }
+   #results .container {
+      padding-top: 6%;
+   }
+   .results {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+   }
+   .results .left {
+      width: 100%;
+      position: absolute;
+      right: 0;
+   }
+   .results .right {
+      width: 100%;
+      position: absolute;
+      top: 25%;
+   }
+   .results #initial {
+      margin-top: 15%;
+      font-size: 14px;
+      line-height: 19.12px;
+      padding-left: 0;
+   }
+   #results .item {
+      background-color: transparent;
+      padding: 16% 0% 4%;
+      text-align: left;
+      border-bottom: 1px solid #49494730;
+   }
+   #results #left {
+      border-right: 1px solid #49494715;
+      padding-left: 40%;
+      padding-top: 55%;
+      text-align: right;
+   }
+   #results #right {
+      border-left: 1px solid #49494715;
+      padding-right: 45%;
+      padding-top: 50%;
+   }
+   .result-value {
+      font-size: 100px;
+      margin: 0 0 10px;
+   }
+   .result-description {
+      font-size: 16px;
+      margin: 0 0 2%;
    }
 }
