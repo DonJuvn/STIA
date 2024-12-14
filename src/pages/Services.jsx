@@ -1,11 +1,12 @@
 import React from "react";
-
+import Services from "../components/services";
 
 const ServicesPage = () => {
    return (
       <>
-         <h1>Servies</h1>
-         
+         <div id="services-page">
+            <Services />
+         </div>
       </>
    );
 };

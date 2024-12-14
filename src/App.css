@@ -979,3 +979,23 @@ nav .container {
       color: #494947;
    }
 }
+
+/* services */
+#services-page{
+   background-color: #fffcff;
+   padding: 5% 0;
+   margin-top: 80vh;
+   border-radius: 30px 30px 0 0;
+   z-index: 1005;
+   width: 100vw;
+}
+#services-page #services{
+   margin-top: -4vh;
+}
+@media screen and (max-width: 768px) {
+   #services-page{
+      padding: 5% 0;
+      margin-top: 90vh;
+      border-radius: 30px 30px 0 0;
+   }
+}
