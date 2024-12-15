@@ -1099,3 +1099,8 @@ nav .container {
    justify-content: end;
    gap: 0.5%;
 }
+
+/* docs */
+#docs{
+   padding: 5% 0;
+} 
