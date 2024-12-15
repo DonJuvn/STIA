@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-
 const servicesData = [
    {
       id: 1,
@@ -51,7 +50,6 @@ const servicesData = [
    },
 ];
 
-
 const Services = () => {
    const [currentIndex, setCurrentIndex] = useState(0);
    const servicesContainerRef = useRef(null);
@@ -78,11 +76,11 @@ const Services = () => {
    return (
       <div id="services">
          <div className="container">
-            <h1 id="title">Услуги</h1>
-            <div
-               className="services"
-               ref={servicesContainerRef}
-            >
+            <div className="title">
+               <div className="dot"></div>
+               <h1 id="title">Услуги</h1>
+            </div>
+            <div className="services" ref={servicesContainerRef}>
                {servicesData.map((service, index) => (
                   <div className="item" key={service.id}>
                      <div className="container">
