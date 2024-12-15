@@ -1102,5 +1102,20 @@ nav .container {
 
 /* docs */
 #docs{
-   padding: 5% 0;
+   padding-top: 5%;
 } 
+
+#clients{
+   padding: 5% 0;
+}
+#clients .clients{
+   width: 67%;
+   gap: 3%;
+}
+#clients .clients p{
+   font-size: 24px;
+   line-height: 32.78px;
+   font-weight: 400;
+   color: #494947;
+   margin-bottom: 3%;
+}
