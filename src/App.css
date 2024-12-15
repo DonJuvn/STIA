@@ -507,7 +507,7 @@ nav .container {
 
 @media (max-width: 768px) {
    #results {
-      padding: 10% 0;
+      padding: 10% 0 15%;
    }
    #results #title {
       width: 50%;
@@ -525,12 +525,14 @@ nav .container {
    .results .left {
       width: 100%;
       position: absolute;
+      border: none;
       right: 0;
    }
    .results .right {
       width: 100%;
       position: absolute;
       top: 25%;
+      border: none;
    }
    .results #initial {
       margin-top: 15%;
@@ -1034,7 +1036,7 @@ nav .container {
    width: 33%;
    margin-bottom: 0.5%;
 }
-.projects #long{
+.projects #long {
    width: 66.5%;
 }
 .projects .item h1 {
@@ -1051,10 +1053,10 @@ nav .container {
    font-weight: 400;
 }
 @media screen and (min-width: 1566px) {
-   #border{
+   #border {
       margin-top: 85vh;
    }
-   #projects{
+   #projects {
       margin-top: 70vh;
       padding-top: 15%;
    }
@@ -1078,7 +1080,7 @@ nav .container {
       width: 100%;
       margin-bottom: 3%;
    }
-   .projects #long{
+   .projects #long {
       width: 100%;
    }
    .projects .item h1 {
@@ -1092,28 +1094,28 @@ nav .container {
 }
 
 /* works */
-#works{
+#works {
    padding-top: 5%;
 }
-#works .projects{
+#works .projects {
    justify-content: end;
    gap: 0.5%;
 }
 
 /* docs */
-#docs{
+#docs {
    padding-top: 5%;
-} 
+}
 
 /* clients */
-#clients{
+#clients {
    padding: 5% 0;
 }
-#clients .clients{
+#clients .clients {
    width: 67%;
    gap: 3%;
 }
-#clients .clients p{
+#clients .clients p {
    font-size: 24px;
    line-height: 32.78px;
    font-weight: 400;
@@ -1122,16 +1124,16 @@ nav .container {
 }
 
 @media screen and (max-width: 768px) {
-   #clients{
+   #clients {
       padding: 10% 0;
    }
-   #clients .clients{
+   #clients .clients {
       width: 100%;
       gap: 3%;
    }
-   #clients .clients p{
+   #clients .clients p {
       font-size: 16px;
       line-height: 21.86px;
       margin-bottom: 3%;
-   }  
+   }
 }
