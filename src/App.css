@@ -1105,6 +1105,7 @@ nav .container {
    padding-top: 5%;
 } 
 
+/* clients */
 #clients{
    padding: 5% 0;
 }
@@ -1118,4 +1119,19 @@ nav .container {
    font-weight: 400;
    color: #494947;
    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+   #clients{
+      padding: 10% 0;
+   }
+   #clients .clients{
+      width: 100%;
+      gap: 3%;
+   }
+   #clients .clients p{
+      font-size: 16px;
+      line-height: 21.86px;
+      margin-bottom: 3%;
+   }  
 }
