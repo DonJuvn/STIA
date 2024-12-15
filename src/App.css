@@ -507,7 +507,7 @@ nav .container {
 
 @media (max-width: 768px) {
    #results {
-      padding: 10% 0 15%;
+      padding: 10% 0 20%;
    }
    #results #title {
       width: 50%;
