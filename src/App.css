@@ -544,16 +544,16 @@ nav .container {
       background-color: transparent;
       padding: 16% 0% 4%;
       text-align: left;
-      border-bottom: 1px solid #49494730;
+      border-bottom: none;
    }
    #results #left {
-      border-right: 1px solid #49494715;
+      border-right: none;
       padding-left: 40%;
       padding-top: 55%;
       text-align: right;
    }
    #results #right {
-      border-left: 1px solid #49494715;
+      border-left: none;
       padding-right: 45%;
       padding-top: 50%;
    }
