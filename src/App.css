@@ -1090,3 +1090,12 @@ nav .container {
       line-height: 19.12px;
    }
 }
+
+/* works */
+#works{
+   padding-top: 5%;
+}
+#works .projects{
+   justify-content: end;
+   gap: 0.5%;
+}
