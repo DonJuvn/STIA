@@ -733,7 +733,7 @@ nav .container {
 }
 @media screen and (min-width: 1566px) {
    #sight {
-      margin-top: 145vh;
+      margin-top: 150vh;
    }
 }
 
@@ -1057,7 +1057,7 @@ nav .container {
       margin-top: 78vh;
    }
    #projects {
-      margin-top: 78vh;
+      margin-top: 72vh;
       padding-top: 15%;
    }
 }
