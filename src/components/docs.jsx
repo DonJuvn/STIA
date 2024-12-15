@@ -1,11 +1,10 @@
-import React from "react";
-const Docs = () => {
+import React from "react";const Docs = () => {
    return (
       <div id="docs">
          <div className="container">
             <div className="title">
                <div className="dot"></div>
-               <h1 id="title"> Из всех разработанных документов</h1>
+               <h1 id="title">Из всех разработанных документов</h1>
             </div>
             <div className="projects">
                <div className="item">
