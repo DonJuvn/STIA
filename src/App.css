@@ -373,6 +373,15 @@ nav .container {
       background-color: #494947;
    }
 }
+@media screen and (max-width: 420px) {
+   #services {
+      margin-top: 165vh;
+      padding-top: 5%;
+      background-color: #fffcff;
+      width: 100vw;
+      padding-bottom: 5vh;
+   }
+}
 
 /* features */
 #features {
