@@ -258,6 +258,11 @@ nav .container {
    line-height: 22px;
    border-bottom: 1px solid #fffcff;
 }
+#about #title {
+   font-size: 28px;
+   /* line-height: 36px; */
+   width: 70%;
+}
 @media screen and (max-width: 768px) {
    #about {
       padding: 3% 0 10%;
