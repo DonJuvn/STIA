@@ -273,6 +273,11 @@ nav .container {
       line-height: 26px;
       width: 100%;
    }
+   #about #title {
+      font-size: 22px;
+      line-height: 26px;
+      width: 100%;
+   }
 }
 
 /* services */
